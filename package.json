@@ -1,15 +1,28 @@
 {
-    "name": "@boatbomber/highlighter",
-    "version": "0.8.2",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/boatbomber/Highlighter.git"
-    },
-    "contributors": [
-        "boatbomber"
-    ],
-    "bugs": {
-        "url": "https://github.com/boatbomber/Highlighter/issues"
-    }
+	"name": "@rbxts/highlighter",
+	"version": "0.8.2-ts.0",
+	"description": "Types for boatbomber/Highlighter",
+	"main": "out/init.lua",
+	"scripts": {
+		"build": "rbxtsc",
+		"watch": "rbxtsc -w",
+		"prepublishOnly": "npm run build"
+	},
+	"keywords": [],
+	"repository": "github:jackTabsCode/Highlighter",
+	"author": "",
+	"license": "MIT",
+	"types": "out/index.d.ts",
+	"files": [
+		"out",
+		"!**/*.tsbuildinfo"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@rbxts/compiler-types": "^2.1.1-types.0",
+		"@rbxts/types": "^1.0.714",
+		"typescript": "^5.2.2"
+	}
 }
