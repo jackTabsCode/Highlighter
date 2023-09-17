@@ -5,7 +5,7 @@ type HighlightProps = {
 	src?: string
 	forceUpdate?: boolean
 	lexer?: Lexer
-	customLang: { [K in string]?: string }
+	customLang?: { [K in string]?: string }
 }
 
 type Lexer = {
